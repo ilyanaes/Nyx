@@ -1,4 +1,4 @@
-local FlyKey = Enum.KeyCode.C
+local FlyKey = Enum.KeyCode.V
         local SpeedKey = Enum.KeyCode.LeftControl
         
         local SpeedKeyMultiplier = 3
@@ -6,6 +6,9 @@ local FlyKey = Enum.KeyCode.C
         local FlightAcceleration = 4
         local TurnSpeed = 16
         
+        -- made by zach
+        
+        -- enjoy :3
         
         local UserInputService = game:GetService("UserInputService")
         local StarterGui = game:GetService("StarterGui")
@@ -79,14 +82,14 @@ local FlyKey = Enum.KeyCode.C
             if userInput.KeyCode == FlyKey then
                 if Connection then
                     StarterGui:SetCore("SendNotification",{
-                        Title = "car fly",
+                        Title = " car fly",
                         Text = "Flight disabled"
                     })
                     Connection:Disconnect()
                     Connection = nil
                 else
                     StarterGui:SetCore("SendNotification",{
-                        Title = "car fly",
+                        Title = " car fly",
                         Text = "Flight enabled"
                     })
                     CurrentVelocity = UserRootPart.Velocity
@@ -96,6 +99,7 @@ local FlyKey = Enum.KeyCode.C
         end)
         
         StarterGui:SetCore("SendNotification",{
-            Title = "car fly",
-            Text = "Loaded successfully, Press C to toggle"
+            Title = " car fly",
+            Text = "Loaded successfully, Press V to toggle"
         })
+play sound
