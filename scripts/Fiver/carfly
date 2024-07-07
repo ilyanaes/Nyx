@@ -1,4 +1,4 @@
-local FlyKey = Enum.KeyCode.V
+local FlyKey = Enum.KeyCode.C
         local SpeedKey = Enum.KeyCode.LeftControl
         
         local SpeedKeyMultiplier = 3
@@ -79,7 +79,7 @@ local FlyKey = Enum.KeyCode.V
             if userInput.KeyCode == FlyKey then
                 if Connection then
                     StarterGui:SetCore("SendNotification",{
-                        Title = "zachs car fly",
+                        Title = "car fly",
                         Text = "Flight disabled"
                     })
                     Connection:Disconnect()
@@ -97,5 +97,5 @@ local FlyKey = Enum.KeyCode.V
         
         StarterGui:SetCore("SendNotification",{
             Title = "car fly",
-            Text = "Loaded successfully, Press V to toggle"
+            Text = "Loaded successfully, Press C to toggle"
         })
