@@ -102,4 +102,3 @@ local FlyKey = Enum.KeyCode.V
             Title = " car fly",
             Text = "Loaded successfully, Press V to toggle"
         })
-play sound
